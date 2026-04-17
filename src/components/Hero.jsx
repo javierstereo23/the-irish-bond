@@ -109,7 +109,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
+      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pt-24 md:pt-28">
 
         {/* Animated clover */}
         <FadeIn delay={0.1}>
