@@ -1,6 +1,7 @@
 import Particles from './components/ui/Particles'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
+import HeroScenes from './components/HeroScenes'
 import Synopsis from './components/Synopsis'
 import Characters from './components/Characters/Characters'
 import Saga from './components/Saga/Saga'
@@ -16,7 +17,7 @@ export default function App() {
     <div className="bg-bg-main text-white min-h-screen">
       <Particles />
       <Nav />
-      <Hero />
+      <HeroScenes />
       <Synopsis />
       <Characters />
       <Saga />
