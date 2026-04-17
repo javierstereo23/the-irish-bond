@@ -17,7 +17,7 @@ export default function App() {
     <div className="bg-bg-main text-white min-h-screen">
       <Particles />
       <Nav />
-      <HeroScenes />
+      <Hero />
       <Synopsis />
       <Characters />
       <Saga />
