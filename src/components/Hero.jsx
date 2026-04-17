@@ -59,8 +59,9 @@ export default function Hero() {
         <FadeIn delay={0.2}>
           <div className="flex justify-center mb-8">
             <CloverIcon
+              color="#c41e3a"
               className="w-20 h-20 md:w-28 md:h-28"
-              style={{ filter: 'drop-shadow(0 0 30px rgba(45,122,58,0.4))' }}
+              style={{ filter: 'drop-shadow(0 0 30px rgba(196,30,58,0.5))' }}
             />
           </div>
         </FadeIn>
