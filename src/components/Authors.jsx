@@ -1,6 +1,7 @@
 import FadeIn from './ui/FadeIn'
 import { SectionLabel } from './Synopsis'
 import { useLanguage } from '../hooks/useLanguage'
+import AuthorsCarousel from './AuthorsCarousel'
 
 export default function Authors() {
   const { t } = useLanguage()
@@ -19,24 +20,7 @@ export default function Authors() {
                 <div className="absolute -inset-1 rounded-lg blur-xl opacity-40 group-hover:opacity-70 transition-opacity"
                   style={{ background: 'linear-gradient(135deg, rgba(45,122,58,0.4), rgba(212,168,83,0.2))' }} />
                 <div className="relative rounded-lg overflow-hidden border border-green-900/20">
-                  <img
-                    src="/images/personajes/autoras-cafe.jpg"
-                    alt="Annie Fisher & Audrey Fischer"
-                    className="w-full object-cover"
-                    style={{ filter: 'brightness(0.85) contrast(1.1)' }}
-                    onError={(e) => {
-                      e.target.parentElement.innerHTML = `
-                        <div style="background: linear-gradient(135deg, #1a0a0a, #080808); aspect-ratio: 1; display: flex; align-items: center; justify-content: center; padding: 2rem; text-align: center;">
-                          <div>
-                            <p style="color: rgba(212,168,83,0.6); font-family: 'Playfair Display', serif; font-size: 1.5rem;">Annie & Audrey</p>
-                            <p style="color: #6b7280; font-size: 0.75rem; margin-top: 0.5rem; letter-spacing: 0.2em;">KEIRA FISCHER</p>
-                          </div>
-                        </div>
-                      `
-                    }}
-                  />
-                  <div className="absolute inset-0 pointer-events-none"
-                    style={{ background: 'linear-gradient(to top, rgba(8,8,8,0.5) 0%, transparent 50%)' }} />
+                  <AuthorsCarousel />
                 </div>
               </div>
             </FadeIn>
