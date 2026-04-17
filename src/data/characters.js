@@ -129,3 +129,42 @@ export const characters = [
     eyes: { es: 'Verdes esmeralda', en: 'Emerald green' },
   },
 ]
+
+export const secondaryCharacters = [
+  {
+    id: 'maison',
+    name: 'Maison',
+    surname: 'Morris',
+    age: 28,
+    role: { es: 'Jugador de Rugby', en: 'Rugby Player' },
+    color: '#4a6fa5',
+    image: '/images/personajes/maison.png',
+    book: { es: 'Libro II — King of Control', en: 'Book II — King of Control' },
+    description: {
+      es: 'Castaño oscuro ondulado, ojos avellana cálidos, mandíbula fuerte y presencia serena. El interés romántico de Connor. Detrás de su calma exterior hay una intensidad que solo Connor logra despertar.',
+      en: 'Dark wavy hair, warm hazel eyes, strong jaw and a calm presence. Connor\'s love interest. Behind his exterior calm lies an intensity that only Connor can awaken.',
+    },
+    traits: {
+      es: ['Sereno', 'Intenso', 'Leal', 'Apasionado'],
+      en: ['Calm', 'Intense', 'Loyal', 'Passionate'],
+    },
+  },
+  {
+    id: 'morgan-wolf-sr',
+    name: 'Richard',
+    surname: 'Wolf',
+    age: 56,
+    role: { es: 'Presidente de la FIA', en: 'FIA President' },
+    color: '#6b6b8a',
+    image: '/images/personajes/morgan-wolf-sr.png',
+    book: { es: 'Saga completa', en: 'Full saga' },
+    description: {
+      es: 'Cabello plateado impecable, ojos grises autoritarios, porte europeo aristocrático. El hombre más poderoso del automovilismo mundial. Padre de Morgan. Frío, calculador y siempre tres pasos adelante.',
+      en: 'Impeccable silver hair, authoritative gray eyes, aristocratic European bearing. The most powerful man in world motorsport. Morgan\'s father. Cold, calculated and always three steps ahead.',
+    },
+    traits: {
+      es: ['Calculador', 'Poderoso', 'Aristocrático', 'Implacable'],
+      en: ['Calculated', 'Powerful', 'Aristocratic', 'Relentless'],
+    },
+  },
+]

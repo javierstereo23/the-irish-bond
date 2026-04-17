@@ -28,14 +28,14 @@ export default function Hero() {
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div
         className="fixed top-0 left-0 z-50 h-0.5 transition-all duration-150"
-        style={{ width: `${scrollProgress}%`, background: 'linear-gradient(90deg, #c41e3a, #d4a853)' }}
+        style={{ width: `${scrollProgress}%`, background: 'linear-gradient(90deg, #2d7a3a, #d4a853)' }}
       />
 
       <div className="absolute inset-0 bg-black">
         <div
           className="absolute inset-0 opacity-40"
           style={{
-            background: `radial-gradient(ellipse at ${30 + mousePos.x * 40}% ${30 + mousePos.y * 40}%, rgba(196,30,58,0.3) 0%, transparent 60%),
+            background: `radial-gradient(ellipse at ${30 + mousePos.x * 40}% ${30 + mousePos.y * 40}%, rgba(45,122,58,0.3) 0%, transparent 60%),
                          radial-gradient(ellipse at ${70 - mousePos.x * 20}% ${60 + mousePos.y * 20}%, rgba(212,168,83,0.15) 0%, transparent 50%)`,
           }}
         />
@@ -60,13 +60,13 @@ export default function Hero() {
           <div className="flex justify-center mb-8">
             <CloverIcon
               className="w-20 h-20 md:w-28 md:h-28"
-              style={{ filter: 'drop-shadow(0 0 30px rgba(196,30,58,0.4))' }}
+              style={{ filter: 'drop-shadow(0 0 30px rgba(45,122,58,0.4))' }}
             />
           </div>
         </FadeIn>
 
         <FadeIn delay={0.5}>
-          <p className="text-sm md:text-base tracking-widest text-red-400/80 uppercase mb-4" style={{ letterSpacing: '0.3em' }}>
+          <p className="text-sm md:text-base tracking-widest text-green-400/80 uppercase mb-4" style={{ letterSpacing: '0.3em' }}>
             {t('hero.presents')}
           </p>
         </FadeIn>
@@ -74,9 +74,9 @@ export default function Hero() {
         <FadeIn delay={0.7}>
           <h1
             className="text-5xl md:text-8xl lg:text-9xl font-bold text-white mb-2 leading-none font-serif"
-            style={{ textShadow: '0 0 80px rgba(196,30,58,0.3)' }}
+            style={{ textShadow: '0 0 80px rgba(45,122,58,0.3)' }}
           >
-            KING<span className="text-red-500 italic font-light text-4xl md:text-6xl lg:text-7xl align-middle mx-3">of</span>SPEED
+            KING<span className="text-green-500 italic font-light text-4xl md:text-6xl lg:text-7xl align-middle mx-3">of</span>SPEED
           </h1>
         </FadeIn>
 
@@ -98,7 +98,7 @@ export default function Hero() {
           <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#synopsis"
-              className="px-8 py-3 bg-red-700/90 hover:bg-red-600 text-white text-sm tracking-widest uppercase transition-all rounded-sm border border-red-600/50 hover:shadow-lg hover:shadow-red-900/30"
+              className="px-8 py-3 hover:bg-green-700 text-white text-sm tracking-widest uppercase transition-all rounded-sm border border-green-700/50 hover:shadow-lg hover:shadow-green-900/30"
               style={{ letterSpacing: '0.2em' }}
             >
               {t('hero.cta1')}

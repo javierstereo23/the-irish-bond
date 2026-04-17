@@ -5,11 +5,11 @@ import { useLanguage } from '../hooks/useLanguage'
 function SectionLabel({ children }) {
   return (
     <div className="flex items-center gap-4 mb-12">
-      <div className="h-px flex-1 bg-gradient-to-r from-transparent to-red-900/30" />
-      <span className="text-xs tracking-widest text-red-500/60 uppercase" style={{ letterSpacing: '0.3em' }}>
+      <div className="h-px flex-1 bg-gradient-to-r from-transparent to-green-900/30" />
+      <span className="text-sm tracking-widest text-green-500/70 uppercase" style={{ letterSpacing: '0.3em' }}>
         {children}
       </span>
-      <div className="h-px flex-1 bg-gradient-to-l from-transparent to-red-900/30" />
+      <div className="h-px flex-1 bg-gradient-to-l from-transparent to-green-900/30" />
     </div>
   )
 }
@@ -19,6 +19,7 @@ export { SectionLabel }
 export default function Synopsis() {
   const { t } = useLanguage()
   const tags = t('synopsis.tags')
+  const tropes = t('synopsis.tropes')
 
   return (
     <section id="synopsis" className="relative py-24 md:py-32 bg-gradient-to-b from-bg-main via-[#0a0a0a] to-bg-main">
@@ -32,24 +33,39 @@ export default function Synopsis() {
             <FadeIn delay={0.1}>
               <h2 className="text-3xl md:text-5xl text-white font-bold leading-tight font-serif">
                 {t('synopsis.title1')}<br />
-                <span className="text-red-500">{t('synopsis.title2')}</span><br />
+                <span className="text-green-500">{t('synopsis.title2')}</span><br />
                 {t('synopsis.title3')}
               </h2>
             </FadeIn>
 
             {['p1', 'p2', 'p3'].map((k, i) => (
               <FadeIn key={k} delay={0.2 + i * 0.1}>
-                <p className="text-gray-400 leading-relaxed text-base md:text-lg">{t(`synopsis.${k}`)}</p>
+                <p className="text-gray-300 leading-relaxed text-lg md:text-xl">{t(`synopsis.${k}`)}</p>
               </FadeIn>
             ))}
 
             <FadeIn delay={0.5}>
               <div className="pt-4 flex flex-wrap gap-3">
                 {Array.isArray(tags) && tags.map((tag) => (
-                  <span key={tag} className="px-3 py-1 text-xs tracking-wider text-red-400/80 border border-red-900/30 rounded-full bg-red-950/20 uppercase">
+                  <span key={tag} className="px-3 py-1 text-sm tracking-wider text-green-400/90 border border-green-900/40 rounded-full bg-green-950/20 uppercase">
                     {tag}
                   </span>
                 ))}
+              </div>
+            </FadeIn>
+
+            <FadeIn delay={0.65}>
+              <div className="pt-6 border-t border-gray-800/40">
+                <p className="text-sm tracking-widest text-green-500/70 uppercase mb-3" style={{ letterSpacing: '0.25em' }}>
+                  {t('synopsis.tropesTitle')}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {Array.isArray(tropes) && tropes.map((trope) => (
+                    <span key={trope} className="px-3 py-1 text-sm text-gray-300 border border-gray-700/60 rounded-full bg-gray-900/40 italic">
+                      {trope}
+                    </span>
+                  ))}
+                </div>
               </div>
             </FadeIn>
           </div>
@@ -58,19 +74,19 @@ export default function Synopsis() {
             <FadeIn delay={0.3} direction="left">
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-b from-red-900/30 to-transparent rounded-lg blur-xl opacity-60 group-hover:opacity-100 transition-opacity" />
-                <div className="relative bg-gradient-to-b from-gray-900 to-black rounded-lg p-8 border border-red-900/20">
-                  <BookOpen className="text-red-500/60 mb-4" size={32} />
-                  <blockquote className="text-gray-300 italic leading-relaxed font-serif">
+                <div className="relative bg-gradient-to-b from-gray-900 to-black rounded-lg p-8 border border-green-900/20">
+                  <BookOpen className="text-green-600/60 mb-4" size={32} />
+                  <blockquote className="text-gray-200 italic leading-relaxed font-serif text-lg">
                     {t('synopsis.quote1')}
                   </blockquote>
-                  <p className="text-red-400/60 text-sm mt-4 tracking-wider uppercase">
+                  <p className="text-green-500/70 text-sm mt-4 tracking-wider uppercase">
                     {t('synopsis.quote1attr')}
                   </p>
                   <div className="mt-6 pt-6 border-t border-gray-800">
-                    <blockquote className="text-gray-300 italic leading-relaxed font-serif">
+                    <blockquote className="text-gray-200 italic leading-relaxed font-serif text-lg">
                       {t('synopsis.quote2')}
                     </blockquote>
-                    <p className="text-red-400/60 text-sm mt-4 tracking-wider uppercase">
+                    <p className="text-green-500/70 text-sm mt-4 tracking-wider uppercase">
                       {t('synopsis.quote2attr')}
                     </p>
                   </div>

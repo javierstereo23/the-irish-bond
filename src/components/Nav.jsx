@@ -29,7 +29,7 @@ export default function Nav() {
       style={{
         background: scrolled ? 'rgba(8,8,8,0.92)' : 'transparent',
         backdropFilter: scrolled ? 'blur(20px)' : 'none',
-        borderBottom: scrolled ? '1px solid rgba(196,30,58,0.15)' : 'none',
+        borderBottom: scrolled ? '1px solid rgba(45,122,58,0.2)' : 'none',
       }}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -58,7 +58,7 @@ export default function Nav() {
             <button
               onClick={() => setLang('es')}
               className="px-2 py-1 transition-colors"
-              style={{ color: lang === 'es' ? '#c41e3a' : '#6b7280' }}
+              style={{ color: lang === 'es' ? '#2d7a3a' : '#6b7280' }}
             >
               ES
             </button>
@@ -66,7 +66,7 @@ export default function Nav() {
             <button
               onClick={() => setLang('en')}
               className="px-2 py-1 transition-colors"
-              style={{ color: lang === 'en' ? '#c41e3a' : '#6b7280' }}
+              style={{ color: lang === 'en' ? '#2d7a3a' : '#6b7280' }}
             >
               EN
             </button>

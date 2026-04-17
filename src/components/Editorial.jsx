@@ -20,7 +20,7 @@ export default function Editorial() {
           <h2 className="text-3xl md:text-5xl text-white font-bold text-center mb-4 font-serif">
             {t('editorial.title')}
           </h2>
-          <p className="text-gray-500 text-center max-w-2xl mx-auto mb-16">
+          <p className="text-gray-400 text-lg text-center max-w-2xl mx-auto mb-16">
             {t('editorial.subtitle')}
           </p>
         </FadeIn>
@@ -33,8 +33,8 @@ export default function Editorial() {
               </h3>
               <ul className="space-y-3">
                 {Array.isArray(positioningItems) && positioningItems.map((item) => (
-                  <li key={item} className="flex items-center gap-3 text-gray-400 text-sm">
-                    <CheckCircle size={14} className="text-red-500/60 shrink-0" />
+                  <li key={item} className="flex items-center gap-3 text-gray-300 text-base">
+                    <CheckCircle size={14} className="text-green-600/60 shrink-0" />
                     {item}
                   </li>
                 ))}
@@ -47,20 +47,20 @@ export default function Editorial() {
               <h3 className="text-white font-bold mb-4 tracking-widest uppercase text-sm" style={{ letterSpacing: '0.2em' }}>
                 {t('editorial.targetTitle')}
               </h3>
-              <p className="text-gray-400 text-sm leading-relaxed">{t('editorial.targetDesc')}</p>
+              <p className="text-gray-300 text-base leading-relaxed">{t('editorial.targetDesc')}</p>
 
               <div className="mt-8 grid grid-cols-3 gap-4 pt-6 border-t border-gray-800/50">
                 <div className="text-center">
                   <p className="text-3xl font-bold text-white font-serif">9</p>
-                  <p className="text-xs text-gray-600 mt-1">{lang === 'es' ? 'Libros totales' : 'Total books'}</p>
+                  <p className="text-sm text-gray-500 mt-1">{lang === 'es' ? 'Libros totales' : 'Total books'}</p>
                 </div>
                 <div className="text-center">
                   <p className="text-3xl font-bold text-white font-serif">18–40</p>
-                  <p className="text-xs text-gray-600 mt-1">Target</p>
+                  <p className="text-sm text-gray-500 mt-1">Target</p>
                 </div>
                 <div className="text-center">
                   <p className="text-3xl font-bold text-white font-serif">F1</p>
-                  <p className="text-xs text-gray-600 mt-1">{lang === 'es' ? 'Ambientación' : 'Setting'}</p>
+                  <p className="text-sm text-gray-500 mt-1">{lang === 'es' ? 'Ambientación' : 'Setting'}</p>
                 </div>
               </div>
             </div>
@@ -81,15 +81,15 @@ export default function Editorial() {
                 <div className="shrink-0 flex items-center gap-3">
                   <span className="text-2xl font-bold text-gray-700 font-serif w-8">{book.num}</span>
                   <div>
-                    <h4 className="text-white font-bold font-serif text-sm">{book.title}</h4>
-                    <p className="text-xs text-gray-600 mt-0.5">{book.genre[lang]}</p>
+                    <h4 className="text-white font-bold font-serif text-base">{book.title}</h4>
+                    <p className="text-sm text-gray-500 mt-0.5">{book.genre[lang]}</p>
                   </div>
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-gray-400 text-sm">{book.tagline[lang]}</p>
+                  <p className="text-gray-300 text-base">{book.tagline[lang]}</p>
                 </div>
                 <div className="shrink-0">
-                  <p className="text-xs italic" style={{ color: book.color }}>{book.hook[lang]}</p>
+                  <p className="text-sm italic" style={{ color: book.color }}>{book.hook[lang]}</p>
                 </div>
               </div>
             ))}
@@ -103,11 +103,11 @@ export default function Editorial() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
             {Array.isArray(reasons) && reasons.map((r, i) => (
               <div key={i} className="bg-bg-card border border-gray-800/40 rounded-lg p-6 hover:border-gray-700 transition-colors">
-                <div className="w-8 h-8 rounded-full bg-red-950/40 border border-red-900/30 flex items-center justify-center text-red-500 text-sm font-bold mb-4">
+                <div className="w-8 h-8 rounded-full bg-green-950/40 border border-green-900/30 flex items-center justify-center text-green-500 text-sm font-bold mb-4">
                   {i + 1}
                 </div>
-                <h4 className="text-white font-bold text-sm mb-2">{r.title}</h4>
-                <p className="text-gray-500 text-xs leading-relaxed">{r.desc}</p>
+                <h4 className="text-white font-bold text-base mb-2">{r.title}</h4>
+                <p className="text-gray-400 text-sm leading-relaxed">{r.desc}</p>
               </div>
             ))}
           </div>
@@ -118,7 +118,7 @@ export default function Editorial() {
             <a
               href="#contact"
               className="inline-flex items-center gap-3 px-10 py-4 text-white text-sm tracking-widest uppercase transition-all rounded-sm border hover:shadow-lg hover:shadow-red-900/30"
-              style={{ background: '#c41e3a', borderColor: 'rgba(196,30,58,0.5)', letterSpacing: '0.2em' }}
+              style={{ background: '#2d7a3a', borderColor: 'rgba(196,30,58,0.5)', letterSpacing: '0.2em' }}
             >
               {t('editorial.cta')}
             </a>

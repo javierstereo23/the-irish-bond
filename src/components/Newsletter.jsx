@@ -41,7 +41,7 @@ export default function Newsletter() {
           <h2 className="text-3xl md:text-4xl text-white font-bold mb-4 font-serif">
             {t('newsletter.title')}
           </h2>
-          <p className="text-gray-500 mb-10">{t('newsletter.subtitle')}</p>
+          <p className="text-gray-400 mb-10 text-lg">{t('newsletter.subtitle')}</p>
         </FadeIn>
 
         <FadeIn delay={0.2}>
@@ -57,7 +57,7 @@ export default function Newsletter() {
                 value={form.name}
                 onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))}
                 placeholder={t('newsletter.namePlaceholder')}
-                className="flex-1 px-4 py-3 bg-bg-card border border-gray-800 rounded-sm text-white text-sm placeholder-gray-600 focus:outline-none focus:border-red-900/60 transition-colors"
+                className="flex-1 px-4 py-3 bg-bg-card border border-gray-800 rounded-sm text-white text-sm placeholder-gray-600 focus:outline-none focus:border-green-700/60 transition-colors"
               />
               <input
                 type="email"
@@ -65,20 +65,20 @@ export default function Newsletter() {
                 value={form.email}
                 onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))}
                 placeholder={t('newsletter.emailPlaceholder')}
-                className="flex-1 px-4 py-3 bg-bg-card border border-gray-800 rounded-sm text-white text-sm placeholder-gray-600 focus:outline-none focus:border-red-900/60 transition-colors"
+                className="flex-1 px-4 py-3 bg-bg-card border border-gray-800 rounded-sm text-white text-sm placeholder-gray-600 focus:outline-none focus:border-green-700/60 transition-colors"
               />
               <button
                 type="submit"
                 disabled={status === 'loading'}
                 className="px-6 py-3 text-white text-sm tracking-widest uppercase rounded-sm border transition-all disabled:opacity-50"
-                style={{ background: '#c41e3a', borderColor: 'rgba(196,30,58,0.5)', letterSpacing: '0.15em' }}
+                style={{ background: '#2d7a3a', borderColor: 'rgba(196,30,58,0.5)', letterSpacing: '0.15em' }}
               >
                 {status === 'loading' ? '...' : t('newsletter.cta')}
               </button>
             </form>
           )}
           {status === 'error' && (
-            <p className="text-red-500/60 text-xs mt-3">
+            <p className="text-green-600/60 text-xs mt-3">
               {lang === 'es' ? 'Hubo un error. Intentá de nuevo.' : 'Something went wrong. Please try again.'}
             </p>
           )}

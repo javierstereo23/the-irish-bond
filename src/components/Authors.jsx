@@ -17,10 +17,10 @@ export default function Authors() {
             <FadeIn direction="right">
               <div className="relative group">
                 <div className="absolute -inset-1 rounded-lg blur-xl opacity-40 group-hover:opacity-70 transition-opacity"
-                  style={{ background: 'linear-gradient(135deg, rgba(196,30,58,0.4), rgba(212,168,83,0.2))' }} />
-                <div className="relative rounded-lg overflow-hidden border border-red-900/20">
+                  style={{ background: 'linear-gradient(135deg, rgba(45,122,58,0.4), rgba(212,168,83,0.2))' }} />
+                <div className="relative rounded-lg overflow-hidden border border-green-900/20">
                   <img
-                    src="/images/personajes/autoras.jpg"
+                    src="/images/personajes/autoras-cafe.jpg"
                     alt="Annie Fisher & Audrey Fischer"
                     className="w-full object-cover"
                     style={{ filter: 'brightness(0.85) contrast(1.1)' }}
@@ -53,26 +53,26 @@ export default function Authors() {
             </FadeIn>
 
             <FadeIn delay={0.2}>
-              <p className="text-gray-400 leading-relaxed">{t('authors.bio')}</p>
+              <p className="text-gray-300 leading-relaxed text-lg">{t('authors.bio')}</p>
             </FadeIn>
 
             <FadeIn delay={0.3}>
-              <p className="text-gray-400 leading-relaxed">{t('authors.bioExtended')}</p>
+              <p className="text-gray-300 leading-relaxed text-lg">{t('authors.bioExtended')}</p>
             </FadeIn>
 
             <FadeIn delay={0.4}>
               <div className="grid grid-cols-3 gap-6 pt-6 border-t border-gray-800/50">
                 <div className="text-center">
                   <p className="text-3xl font-bold text-white font-serif">{t('authors.stat1')}</p>
-                  <p className="text-xs text-gray-600 tracking-wider uppercase mt-1">{t('authors.stat1Label')}</p>
+                  <p className="text-sm text-gray-500 tracking-wider uppercase mt-1">{t('authors.stat1Label')}</p>
                 </div>
                 <div className="text-center">
                   <p className="text-3xl font-bold text-white font-serif">{t('authors.stat2')}</p>
-                  <p className="text-xs text-gray-600 tracking-wider uppercase mt-1">{t('authors.stat2Label')}</p>
+                  <p className="text-sm text-gray-500 tracking-wider uppercase mt-1">{t('authors.stat2Label')}</p>
                 </div>
                 <div className="text-center">
                   <p className="text-3xl font-bold text-white font-serif">{t('authors.stat3')}</p>
-                  <p className="text-xs text-gray-600 tracking-wider uppercase mt-1">{t('authors.stat3Label')}</p>
+                  <p className="text-sm text-gray-500 tracking-wider uppercase mt-1">{t('authors.stat3Label')}</p>
                 </div>
               </div>
             </FadeIn>

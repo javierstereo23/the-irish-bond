@@ -32,7 +32,7 @@ export default function Particles() {
             left: `${p.left}%`,
             width: p.size,
             height: p.size,
-            background: 'radial-gradient(circle, rgba(196,30,58,0.8), rgba(212,168,83,0.4))',
+            background: 'radial-gradient(circle, rgba(45,122,58,0.8), rgba(212,168,83,0.4))',
             animation: `floatUp ${p.duration}s ${p.delay}s infinite ease-out`,
             '--p-opacity': p.opacity,
           }}

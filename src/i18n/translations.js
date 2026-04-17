@@ -9,7 +9,7 @@ export const translations = {
       contact: 'Contacto',
     },
     hero: {
-      presents: 'Keira Fischer presenta',
+      presents: 'Annie Fisher & Audrey Fischer presentan',
       book1: 'King of Speed',
       book1Sub: 'The Irish Bond — Libro I',
       quote: 'Si alguna vez dudaste de que esto era real, entonces no estabas prestando atención.',
@@ -25,6 +25,8 @@ export const translations = {
       p2: 'Morgan no es la chica dócil que todos esperaban. Es feroz, impredecible y tiene su propia agenda. Cuando irrumpe en la gala de la FIA y besa al gemelo equivocado frente a toda la familia, el caos queda servido. Lo que empieza como una farsa estratégica se convierte en algo peligrosamente real.',
       p3: 'Entre la velocidad de los circuitos, las calles de Mónaco y los secretos de una dinastía que devora a los suyos, Lian y Morgan descubrirán que el amor verdadero puede ser el acto más valiente — y el más devastador — de sus vidas.',
       tags: ['Dark Romance', 'Fórmula 1', 'Matrimonio por contrato', 'Gemelos', 'Familia', 'Tragedia'],
+      tropesTitle: 'Tropes',
+      tropes: ['Arranged Marriage', 'Grumpy × Sunshine', 'Enemies to Lovers', 'Forbidden M/M', 'Sports Romance', 'Second Chance', 'Found Family', 'Dark Romance', 'Mystery'],
       quote1: '«Frío. Rígido. Eso pensaba de mí. Me gustan los hombres que me hacen sentir que me quemo.»',
       quote1attr: '— Morgan sobre Lian',
       quote2: '«¿Sabías que el hielo también quema?»',
@@ -75,7 +77,7 @@ export const translations = {
     },
     authors: {
       label: 'Las Autoras',
-      title: 'Detrás de Keira Fischer',
+      title: 'Annie Fisher & Audrey Fischer',
       names: 'Annie Fisher & Audrey Fischer',
       bio: '"The Irish Bond" nació de una colaboración única entre dos hermanas. Annie Fisher y Audrey Fischer construyeron un universo donde el deporte de élite, la familia irlandesa y el romance más oscuro conviven en perfecta tensión.',
       bioExtended: 'Con títulos publicados en Amazon, su colaboración ha capturado la atención de lectores con historias frescas y emocionantes. Su visión transmedia y su capacidad para construir universos narrativos complejos las posiciona como una voz nueva e irresistible en el romance contemporáneo de habla hispana.',
@@ -109,7 +111,7 @@ export const translations = {
     },
     footer: {
       tagline: 'Dark Romance · Fórmula 1 · Familia · Secretos',
-      copyright: 'Keira Fischer. Todos los derechos reservados.',
+      copyright: 'Annie Fisher & Audrey Fischer. Todos los derechos reservados.',
     },
   },
   en: {
@@ -122,7 +124,7 @@ export const translations = {
       contact: 'Contact',
     },
     hero: {
-      presents: 'Keira Fischer presents',
+      presents: 'Annie Fisher & Audrey Fischer present',
       book1: 'King of Speed',
       book1Sub: 'The Irish Bond — Book I',
       quote: "If you ever doubted this was real, then you weren't paying attention.",
@@ -138,6 +140,8 @@ export const translations = {
       p2: "Morgan is not the docile girl everyone expected. She is fierce, unpredictable and has her own agenda. When she bursts into the FIA gala and kisses the wrong twin in front of the whole family, chaos ensues. What begins as a strategic farce becomes something dangerously real.",
       p3: "Between the speed of the circuits, the streets of Monaco and the secrets of a dynasty that devours its own, Lian and Morgan will discover that true love can be the bravest — and most devastating — act of their lives.",
       tags: ['Dark Romance', 'Formula 1', 'Arranged Marriage', 'Twins', 'Family', 'Tragedy'],
+      tropesTitle: 'Tropes',
+      tropes: ['Arranged Marriage', 'Grumpy × Sunshine', 'Enemies to Lovers', 'Forbidden M/M', 'Sports Romance', 'Second Chance', 'Found Family', 'Dark Romance', 'Mystery'],
       quote1: '"Cold. Rigid. That\'s what I thought of him. I like men who make me feel like I\'m burning."',
       quote1attr: '— Morgan about Lian',
       quote2: '"Did you know ice burns too?"',
@@ -188,7 +192,7 @@ export const translations = {
     },
     authors: {
       label: 'The Authors',
-      title: 'Behind Keira Fischer',
+      title: 'Annie Fisher & Audrey Fischer',
       names: 'Annie Fisher & Audrey Fischer',
       bio: '"The Irish Bond" was born from a unique collaboration between two sisters. Annie Fisher and Audrey Fischer built a universe where elite sport, Irish family, and the darkest romance coexist in perfect tension.',
       bioExtended: 'With titles published on Amazon, their collaboration has captured readers with fresh and exciting stories. Their transmedia vision and ability to build complex narrative universes positions them as a fresh and irresistible voice in contemporary romance.',
@@ -222,7 +226,7 @@ export const translations = {
     },
     footer: {
       tagline: 'Dark Romance · Formula 1 · Family · Secrets',
-      copyright: 'Keira Fischer. All rights reserved.',
+      copyright: 'Annie Fisher & Audrey Fischer. All rights reserved.',
     },
   },
 }

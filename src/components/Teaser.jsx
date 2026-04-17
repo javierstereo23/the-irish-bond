@@ -8,12 +8,12 @@ export default function Teaser() {
 
   return (
     <section id="teaser" className="relative py-0 bg-black overflow-hidden" style={{ minHeight: '60vh' }}>
-      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at center, rgba(196,30,58,0.08) 0%, #000 70%)' }} />
+      <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at center, rgba(45,122,58,0.08) 0%, #000 70%)' }} />
 
       <div className="relative max-w-5xl mx-auto px-6 py-24">
         <FadeIn>
           <div
-            className="relative w-full rounded-lg overflow-hidden border border-red-900/20"
+            className="relative w-full rounded-lg overflow-hidden border border-green-900/20"
             style={{ paddingTop: '56.25%' }}
           >
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-6"
@@ -29,7 +29,7 @@ export default function Teaser() {
               <CloverIcon className="w-16 h-16 opacity-30" />
 
               <div className="text-center z-10">
-                <p className="text-xs tracking-widest text-red-500/60 uppercase mb-3" style={{ letterSpacing: '0.3em' }}>
+                <p className="text-xs tracking-widest text-green-600/60 uppercase mb-3" style={{ letterSpacing: '0.3em' }}>
                   {t('teaser.label')}
                 </p>
                 <h3 className="text-2xl md:text-4xl font-bold text-white font-serif mb-2">
@@ -39,18 +39,18 @@ export default function Teaser() {
               </div>
 
               <button
-                className="w-16 h-16 rounded-full border-2 border-red-700/50 flex items-center justify-center text-red-500 hover:border-red-500 hover:text-red-400 transition-all hover:scale-110 z-10"
-                style={{ background: 'rgba(196,30,58,0.1)' }}
+                className="w-16 h-16 rounded-full border-2 border-green-700/50 flex items-center justify-center text-green-500 hover:border-red-500 hover:text-red-400 transition-all hover:scale-110 z-10"
+                style={{ background: 'rgba(45,122,58,0.1)' }}
                 disabled
                 aria-label="Play teaser"
               >
                 <Play size={24} fill="currentColor" />
               </button>
 
-              <div className="absolute top-4 left-4 w-8 h-8 border-t border-l border-red-900/40" />
-              <div className="absolute top-4 right-4 w-8 h-8 border-t border-r border-red-900/40" />
-              <div className="absolute bottom-4 left-4 w-8 h-8 border-b border-l border-red-900/40" />
-              <div className="absolute bottom-4 right-4 w-8 h-8 border-b border-r border-red-900/40" />
+              <div className="absolute top-4 left-4 w-8 h-8 border-t border-l border-green-900/40" />
+              <div className="absolute top-4 right-4 w-8 h-8 border-t border-r border-green-900/40" />
+              <div className="absolute bottom-4 left-4 w-8 h-8 border-b border-l border-green-900/40" />
+              <div className="absolute bottom-4 right-4 w-8 h-8 border-b border-r border-green-900/40" />
             </div>
           </div>
         </FadeIn>

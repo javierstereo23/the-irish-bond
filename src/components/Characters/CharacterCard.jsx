@@ -42,17 +42,17 @@ export default function CharacterCard({ char, index }) {
           </div>
 
           <div className="p-5 flex flex-col flex-1 gap-3">
-            <div className="flex items-center gap-2 text-xs text-gray-500">
+            <div className="flex items-center gap-2 text-sm text-gray-400">
               <span>{char.age} {lang === 'es' ? 'años' : 'y.o.'}</span>
-              <span className="w-1 h-1 rounded-full bg-gray-700" />
+              <span className="w-1 h-1 rounded-full bg-gray-600" />
               <span>{char.role[lang]}</span>
             </div>
 
-            <p className="text-gray-400 text-sm leading-relaxed">{char.description[lang]}</p>
+            <p className="text-gray-300 text-base leading-relaxed">{char.description[lang]}</p>
 
             {char.quote[lang] && (
               <blockquote
-                className="text-xs italic text-gray-500 border-l-2 pl-3 font-serif"
+                className="text-sm italic text-gray-400 border-l-2 pl-3 font-serif"
                 style={{ borderColor: `${char.color}60` }}
               >
                 {char.quote[lang]}
@@ -63,8 +63,8 @@ export default function CharacterCard({ char, index }) {
               {char.traits[lang].map((trait) => (
                 <span
                   key={trait}
-                  className="text-xs px-2 py-0.5 rounded-full border"
-                  style={{ color: `${char.color}cc`, borderColor: `${char.color}30`, background: `${char.color}0a` }}
+                  className="text-sm px-2.5 py-1 rounded-full border"
+                  style={{ color: `${char.color}ee`, borderColor: `${char.color}50`, background: `${char.color}12` }}
                 >
                   {trait}
                 </span>
@@ -73,7 +73,7 @@ export default function CharacterCard({ char, index }) {
 
             <div className="flex items-center gap-2 pt-2 border-t border-gray-800/50">
               <span className="w-2 h-2 rounded-full" style={{ background: char.color }} />
-              <span className="text-xs text-gray-600">
+              <span className="text-sm text-gray-500">
                 {lang === 'es' ? 'Ojos' : 'Eyes'} {char.eyes[lang]}
               </span>
             </div>
