@@ -1,24 +1,28 @@
 export default function CloverIcon({ className = '', color = '#2d7a3a', style }) {
-  // Classic shamrock: three fat round lobes meeting at center, each shaped like
-  // the Getty Images reference — circular top, narrow pinch point at stem join
+  // Traditional shamrock: three heart-shaped lobes meeting at the center,
+  // each with a V-notch on the outer edge and tapering to the stem join.
+  // Lobes are rotated 0°, 120° and 240° around (50, 55).
   const leaf = [
-    'M 50,60',
-    'C 18,56 15,18 34,10',  // left outer: wide sweep up-left to lobe top-left
-    'C 42,4 58,4 66,10',    // top arc: control pts at y=4 → maximum roundness
-    'C 85,18 82,56 50,60',  // right outer: mirror back down to center
+    'M 50 55',                     // tapered point at the shamrock center
+    'C 30 55 12 45 14 28',         // outer-left, swing up and out
+    'C 16 12 35 6 45 18',          // left lobe top (rounded)
+    'C 47 22 50 26 50 30',         // V-notch — left side dips inward
+    'C 50 26 53 22 55 18',         // V-notch — right side rises back up
+    'C 65 6 84 12 86 28',          // right lobe top (rounded)
+    'C 88 45 70 55 50 55',         // outer-right back down to the center
     'Z',
   ].join(' ')
 
   return (
-    <svg viewBox="0 5 100 105" className={className} style={style} overflow="visible">
+    <svg viewBox="0 0 100 100" className={className} style={style}>
       <g fill={color}>
         <path d={leaf} />
-        <g transform="rotate(120 50 60)"><path d={leaf} /></g>
-        <g transform="rotate(240 50 60)"><path d={leaf} /></g>
+        <g transform="rotate(120 50 55)"><path d={leaf} /></g>
+        <g transform="rotate(240 50 55)"><path d={leaf} /></g>
         <path
-          d="M 50,61 Q 48,78 46,96"
+          d="M 50 56 Q 50 76 48 96"
           stroke={color}
-          strokeWidth="5"
+          strokeWidth="4"
           strokeLinecap="round"
           fill="none"
         />
