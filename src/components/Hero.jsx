@@ -162,41 +162,40 @@ export default function Hero() {
         {/* Main title */}
         <FadeIn delay={0.7}>
           <h1
-            className="title-glow font-bold text-white leading-none font-serif"
-            style={{ fontSize: 'clamp(3.5rem, 12vw, 9rem)' }}
+            className="title-glow font-bold text-white leading-none font-serif tracking-wide"
+            style={{ fontSize: 'clamp(2.5rem, 9vw, 7rem)' }}
           >
-            KING
-            <span
-              className="italic font-light align-middle mx-3 md:mx-4"
-              style={{ fontSize: 'clamp(2rem, 7vw, 5.5rem)', color: '#c41e3a' }}
-            >
-              of
-            </span>
-            SPEED
+            {t('hero.title')}
           </h1>
         </FadeIn>
 
         {/* Subtitle */}
         <FadeIn delay={0.9}>
-          <p className="text-lg md:text-xl text-gray-400 mt-5 font-serif italic tracking-wider">
-            {t('hero.book1Sub')}
+          <p className="text-lg md:text-2xl text-gray-300 mt-6 font-serif italic max-w-3xl mx-auto">
+            {t('hero.subtitle')}
           </p>
         </FadeIn>
 
         {/* Decorative divider */}
         <FadeIn delay={1.0}>
-          <div className="flex items-center gap-3 justify-center mt-8 mb-8">
+          <div className="flex items-center gap-3 justify-center mt-10 mb-8">
             <div className="h-px w-8" style={{ background: 'rgba(196,30,58,0.4)' }} />
-            <span className="text-xs tracking-widest text-gray-600 uppercase" style={{ letterSpacing: '0.4em' }}>The Irish Bond</span>
+            <span className="text-xs tracking-widest text-gray-600 uppercase" style={{ letterSpacing: '0.4em' }}>Saga O&apos;Connor</span>
             <div className="h-px w-8" style={{ background: 'rgba(196,30,58,0.4)' }} />
           </div>
         </FadeIn>
 
-        {/* Quote */}
+        {/* Bajada */}
         <FadeIn delay={1.1}>
-          <div className="max-w-2xl mx-auto px-4">
+          <div className="max-w-3xl mx-auto px-4 space-y-3">
             <p className="text-base md:text-lg text-gray-400 leading-relaxed font-serif italic">
-              &ldquo;{t('hero.quote')}&rdquo;
+              {t('hero.body1')}
+            </p>
+            <p className="text-base md:text-lg text-gray-400 leading-relaxed font-serif italic">
+              {t('hero.body2')}
+            </p>
+            <p className="text-base md:text-lg text-gray-300 leading-relaxed font-serif italic">
+              {t('hero.body3')}
             </p>
           </div>
         </FadeIn>
@@ -205,7 +204,7 @@ export default function Hero() {
         <FadeIn delay={1.4}>
           <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="#synopsis"
+              href="#saga"
               className="px-8 py-3.5 text-white text-sm tracking-widest uppercase transition-all rounded-sm border hover:shadow-xl"
               style={{
                 background: 'rgba(196,30,58,0.85)',
@@ -219,7 +218,7 @@ export default function Hero() {
               {t('hero.cta1')}
             </a>
             <a
-              href="#contact"
+              href="#characters"
               className="px-8 py-3.5 bg-transparent text-gray-300 text-sm tracking-widest uppercase transition-all rounded-sm border border-gray-700 hover:border-gray-500 hover:bg-white/5"
               style={{ letterSpacing: '0.2em' }}
             >
@@ -230,7 +229,7 @@ export default function Hero() {
 
         {/* Scroll cue */}
         <FadeIn delay={1.8}>
-          <a href="#synopsis" className="inline-block mt-16 text-gray-600 hover:text-gray-400 transition-colors" style={{ animation: 'bounce 2s infinite' }}>
+          <a href="#concept" className="inline-block mt-16 text-gray-600 hover:text-gray-400 transition-colors" style={{ animation: 'bounce 2s infinite' }}>
             <ChevronDown size={28} />
           </a>
         </FadeIn>

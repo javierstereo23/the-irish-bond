@@ -15,9 +15,8 @@ export default function Nav() {
   }, [])
 
   const links = [
-    { key: 'synopsis', href: '#synopsis' },
-    { key: 'characters', href: '#characters' },
     { key: 'saga', href: '#saga' },
+    { key: 'characters', href: '#characters' },
     { key: 'editorial', href: '#editorial' },
     { key: 'authors', href: '#authors' },
     { key: 'contact', href: '#contact' },

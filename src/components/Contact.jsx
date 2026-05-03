@@ -1,6 +1,6 @@
 import { Mail, BookOpen, Flame, Heart } from 'lucide-react'
 import FadeIn from './ui/FadeIn'
-import { SectionLabel } from './Synopsis'
+import SectionLabel from './ui/SectionLabel'
 import { useLanguage } from '../hooks/useLanguage'
 
 const CONTACT_EMAIL = 'contacto@theirishbond.com'

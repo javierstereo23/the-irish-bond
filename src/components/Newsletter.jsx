@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import FadeIn from './ui/FadeIn'
-import { SectionLabel } from './Synopsis'
+import SectionLabel from './ui/SectionLabel'
 import { useLanguage } from '../hooks/useLanguage'
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/REPLACE_WITH_YOUR_FORM_ID'

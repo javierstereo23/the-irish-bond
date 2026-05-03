@@ -1,5 +1,5 @@
 import FadeIn from './ui/FadeIn'
-import { SectionLabel } from './Synopsis'
+import SectionLabel from './ui/SectionLabel'
 import { useLanguage } from '../hooks/useLanguage'
 import AuthorsCarousel from './AuthorsCarousel'
 
